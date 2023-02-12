@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<form name="form1" method="post">
+    <h1>CURRENCY RATE CALCULATOR</h1>    
+        <div id="input">Enter in the amount of money:<input type="number" 
+                                                            name="amount" required 
+                                                            value="0.00"> 
+    <br>
+        </div>
+        Select currencies:<br></div>
+    
+        <select name="codes" id="codes" size = "4">
+            {% for rate in rates %}
+			<option value="{{code}}">{{code}}</option>
+			{% endfor %}
+        </select>
+
+</div>
+    <div id="div1">RESULT:{{result}}
+        <div id="div2">  </div>      
+        <button class="convert_button" type="submit">Convert currency</button>
+    </form> 
+	</div>
+
+</body>
+</html>

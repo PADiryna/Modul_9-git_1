@@ -1,0 +1,18 @@
+
+body {
+    background-color: grey;
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;   
+}
+select  {
+    font-size: large;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
+
